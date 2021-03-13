@@ -19,4 +19,10 @@ class SimpleCalculator {
     }
     return calculateFibonacci(n - 1) + calculateFibonacci(n - 2);
   }
+  int moduloNumber(int x, int y){
+    return  x % y;
+  }
+  double splitNumber(double x, double y){
+    return  x / y;
+  }
 }
