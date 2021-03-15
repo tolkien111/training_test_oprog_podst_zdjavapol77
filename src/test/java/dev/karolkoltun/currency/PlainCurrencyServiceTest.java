@@ -26,7 +26,8 @@ class PlainCurrencyServiceTest {
         BigDecimal amountPln = BigDecimal.valueOf(4570, 2); //jak zrobić inaczej
         //Then
         assertThat(result)
-                .isEqualTo(amountPln);
+                .isEqualByComparingTo("45.70");
+        assertEquals(0, result.compareTo(amountPln)); //druga metoda, gorsza
     }
 
     @Test
